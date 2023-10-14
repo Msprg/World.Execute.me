@@ -114,6 +114,7 @@ ________________________________________________________________________________
         print ("\n>>> CIRCUMFERENCE of set point ::: ",keliling)
     
     def loopInfinity():
+        sys.stdout.write('\n\n')
         for c in itertools.cycle(['|', '/', '-', '\\','   Then you can be my']):
             sys.stdout.write('\r' +"\033[31m"+ c+"\033[0m")
             sys.stdout.flush()
@@ -146,16 +147,24 @@ ________________________________________________________________________________
             return "\n-- S U C C E S S    E X E C U T E --"
     
     def TRAPPED():
-        for c in itertools.cycle(['💀   Though we are trapped', '   Though we are trapped']):
-            sys.stdout.write('\r' +"\033[31m"+ c+"\033[0m")
+        try:
+            for c in itertools.cycle(['💀   Though we are trapped', '   Though we are trapped']):
+                sys.stdout.write('\r' +"\033[31m"+ c+"\033[0m")
+                sys.stdout.flush()
+                time.sleep(0.0001)
+        finally:
+            sys.stdout.write('\r' +"\033[31m"+ '💀   Though we are trapped'+"\033[0m")
             sys.stdout.flush()
-            time.sleep(0.0001)
     
     def IMTRAPPED():
-        for c in itertools.cycle(['💔  TRAPPED', '  TRAPPED']):
-            sys.stdout.write('\r' +"\033[31m"+ c+"\033[0m")
+        try:
+            for c in itertools.cycle(['💔  TRAPPED', '  TRAPPED']):
+                sys.stdout.write('\r' +"\033[31m"+ c+"\033[0m")
+                sys.stdout.flush()
+                time.sleep(0.0001)
+        finally:
+            sys.stdout.write('\r' +"\033[31m"+ '💔  TRAPPED'+"\033[0m")
             sys.stdout.flush()
-            time.sleep(0.0001)
     
     def GET_NUTRIENTS():
         return "-- S U C C E S S  G E T  N U T R I E N T S --"
@@ -215,11 +224,11 @@ ________________________________________________________________________________
 ORIGINALLY BY ALIF BUDIMAN, REWORKED BY MSPRG
 MUSIC BY MILI 'WORLD.EXECUTE(ME);'
                                                                          
-.    .    *  .   .  .   .  *     .  .        . .   .     .  *   .     .  .
-*  .    .    *  .     .         .    * .     .  *  .    .   .   *   . .   
-.    .    *  .   .  .   .  *     .  .        . .   .     .  *   .     .  .
-*  .    .    *  .     .         .    * .     .  *  .    .   .   *   . .   
-.    .    *  .   .  .   .  *     .  .        . .   .     .  *   .     .  .
+.    .    *  .   .  .   .  *     .  .        . .   .     .  *   .     .
+*  .    .    *  .     .         .    * .     .  *  .    .   .   *   . .
+.    .    *  .   .  .   .  *     .  .        . .   .     .  *   .     .
+*  .    .    *  .     .         .    * .     .  *  .    .   .   *   . .
+.    .    *  .   .  .   .  *     .  .        . .   .     .  *   .     .
 EXECUTION!!\n
 """ 
             for karakter in fire:
